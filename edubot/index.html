@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduBot AI</title>
+    <link rel="stylesheet" href="bot.css">
+</head>
+<body>
+    <header class="bot-header">
+        <a href="../1.index.html">← EduPlay Arena</a>
+        <h2>🤖 EduBot AI</h2>
+        <span class="online">Learning Assistant</span>
+    </header>
+
+    <main class="chat-container">
+        <section class="welcome">
+            <h1>Hey, Student! 👋</h1>
+            <p>I'm EduBot, your friendly AI learning assistant.</p>
+            <p>Ask me anything about your subjects!</p>
+        </section>
+
+        <section class="chat-box" aria-live="polite">
+            <div id="messages">
+                <div class="message bot">
+                    Hello! 👋 Welcome to EduBot AI.
+                    What would you like to learn today?
+                </div>
+            </div>
+        </section>
+
+        <form id="chatForm" class="chat-input">
+            <input type="text" id="userInput"
+                placeholder="Ask EduBot a question..."
+                maxlength="1000" required>
+            <button type="submit" id="sendButton">Send ➤</button>
+        </form>
+    </main>
+
+    <script src="bot.js"></script>
+</body>
+</html>
